@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    /* В body НЕЛЬЗЯ вставлять фон, нужно применять отдельно контейнер!!! */
+}
+
+.bg {
+    background-color: #539ee2;
+    background-image: url(../img/image11.jpg);
+    background-size: cover;
+    /* выключает повтор картинки */
+    background-repeat: no-repeat;
+    /* местоположение картинки */
+    background-position: center;
+    min-height: 100vh;
+    /* фиксирует задний фон на одном месте */
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    /* это все заменяет одно свойство */
+    inset: 0;
+    /* ставит фон на задний план */
+    z-index: -1;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 100%;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-direction: row-reverse; */
+}
+
+.item1 {
+    position: fixed;
+    top: 0;
+    left: 500px;
+    /* z-index: 0; */
+
+}
+
+.item1__img {
+    width: 830px;
+}
+
+.raketa1 {
+    z-index: 1;
+    /* position: relative; */
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    /* время анимации */
+    animation-duration: 5s;
+    /* задается любое имя  */
+    animation-name: raketa1;
+    /* делает 3 повторения */
+    animation-iteration-count: 1;
+    /* добавляет обратную анимацию */
+    /* animation-direction: alternate; */
+}
+
+.raketa1__img {
+    width: 200px;
+}
+
+@keyframes raketa1 {
+    0% {
+        top: -300px;
+        left: -300px;
+    }
+
+    100% {
+        top: 0px;
+        left: 700px;
+    }
+}
+
+.raketa2 {
+    z-index: 1;
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    /* время анимации */
+    animation-duration: 5s;
+    /* задается любое имя  */
+    animation-name: raketa2;
+    /* делает 3 повторения */
+    animation-iteration-count: 1;
+    /* добавляет обратную анимацию */
+    /* animation-direction: alternate; */
+}
+
+.raketa2__img {
+    width: 200px;
+}
+
+@keyframes raketa2 {
+    0% {
+        top: -300px;
+        left: -300px;
+    }
+
+    100% {
+        top: 125px;
+        left: 700px;
+    }
+}
+
+.raketa3 {
+    z-index: 1;
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    /* время анимации */
+    animation-duration: 5s;
+    /* задается любое имя  */
+    animation-name: raketa3;
+    /* делает 3 повторения */
+    animation-iteration-count: 1;
+    /* добавляет обратную анимацию */
+    /* animation-direction: alternate; */
+}
+
+.raketa3__img {
+    width: 200px;
+}
+
+@keyframes raketa3 {
+    0% {
+        top: -300px;
+        left: -300px;
+    }
+
+    100% {
+        top: 250px;
+        left: 700px;
+    }
+}
+
+.fire1 {
+    z-index: 1;
+    position: absolute;
+    top: 55px;
+    left: 650px;
+    /* время анимации */
+    animation-duration: 10s;
+    /* задается любое имя  */
+    animation-name: fire1;
+    /* делает 3 повторения */
+    animation-iteration-count: 1;
+    /* добавляет обратную анимацию */
+    /* animation-direction: alternate; */
+}
+
+.fire1__img {
+    width: 500px;
+}
+
+@keyframes fire1 {
+    0% {
+    top: -500px;
+        left: 810px;
+    }
+
+          49.99% {
+              top: -500px;
+              left: 810px;
+          }
+  50% {
+    top: 55px;
+        left: 650px;
+  }
+
+
+    100% {
+    top: 55px;
+        left: 650px;
+    }
+}
+
+.fire2 {
+    z-index: -1;
+    position: absolute;
+    top: 550px;
+    left: 550px;
+    /* время анимации */
+    animation-duration: 10s;
+    /* задается любое имя  */
+    animation-name: fire2;
+    /* делает 3 повторения */
+    animation-iteration-count: 1;
+    /* добавляет обратную анимацию */
+    /* animation-direction: alternate; */
+}
+
+.fire2__img {
+    width: 700px;
+}
+
+@keyframes fire2 {
+    0% {
+        top: 0px;
+        left: 550px;
+    }
+
+          40% {
+              top: 0px;
+              left: 550px;
+          }
+
+    100% {
+        top: 550px;
+        left: 550px;
+
+    }
+}
